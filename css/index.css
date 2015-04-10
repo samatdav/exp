@@ -1,0 +1,44 @@
+body, html {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 800px;
+}
+
+.navbar {
+	height: 120px;
+}
+
+#logo {
+	position: relative;
+	height: 180px;
+	margin-top: 30px;
+	left: 500px;
+	/*text-align: center;*/
+	/*margin: 0 auto;*/
+}
+
+#mapid { width: 100%; height: 100%; margin: 0; }
+
+#map {
+	margin-top: 140px;
+    width: 100%;
+    /*height: calc(100% - 140px);*/
+    /*height: 100%;*/
+    height: 800px;
+    max-height: 100%;
+	/*z-index: 10000;*/
+}
+
+#logo_icon {
+	position: absolute;
+	left: 100px;
+	height: 120px;
+	/*top: -30px;*/
+	float: left;
+}
+
+.header {
+	padding-bottom: 0px;
+	padding-top: 0px;
+}

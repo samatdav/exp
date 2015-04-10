@@ -1,0 +1,10 @@
+@media (min-width: 1200px) {
+	.navbar .nav > li > a > #tracking {
+	color: #555;
+}	
+}
+
+@media (min-width: 768px)
+.navbar .nav > li > a {
+	color: #555;
+}
