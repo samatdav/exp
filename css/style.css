@@ -84,7 +84,7 @@ img
 
 select {
   background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
+  /*border: 1px solid #CCCCCC;*/
   width: 220px;
 }
 
@@ -219,10 +219,17 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	bottom: 15px;
 	left: 17px;
 }
+.product img {
+	border: 0px !important;
+}
 /*.product .desc .name {
 	position: relative;
 	bottom: 40px;
 }*/
+.product {
+	box-shadow: 0px 3px 7px -2px rgba(0,0,0,0.3);
+	/*background-color: #ccc !important;*/
+}
 .buttons .right 
 {
     text-align: right;
@@ -260,7 +267,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 .navbar-toggle
 {
-	border:2px solid #ccc;
+	/*border:2px solid #ccc;*/
 }
 
 .navbar .navbar-toggle
@@ -630,7 +637,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 		border-color:transparent;
 		border-style:solid;
 		border-width:5px 0 5px 5px;
-		border-left-color:#cccccc;
+		/*border-left-color:#cccccc;*/
 		margin-top:8px;
 		margin-right:-10px;
 	}
@@ -1122,8 +1129,13 @@ a.dropdown-toggle
 .left-menu
 {
 	/*margin-bottom:20px;*/
+	padding-left: 0px;
+	padding-right: 0px;
 }
-
+.product-wrap {
+	padding-left: 0;
+	padding-right: 5px;
+}
 .left-menu
 {
 	background:#fff;
@@ -1306,11 +1318,12 @@ ul.slides
 }*/
 .product .name
 {
-    text-align:center;
+    text-align:left;
     max-height: 20px;
     overflow: hidden;
     position: relative;  
     top: 10px;
+    padding-left: 10px;
 
 }
 .product .name p 
@@ -1328,7 +1341,7 @@ ul.slides
 }*/
 .product .price
 {
-    text-align:center;
+    text-align:left;
     margin:0px;
 }
 .product .price p  
@@ -2519,7 +2532,9 @@ td.image img
 	max-width:100px;
 	width:100px;
 }
-
+td.name {
+	width: 100px;
+}
 .cart-info.dropdown-menu, .cart-info.dropdown-menu .table tbody
 {
 	border:none;
@@ -3260,3 +3275,8 @@ ul.autocomplete li img
 .dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
 .dropdown-submenu:hover>a:after{border-left-color:#ffffff;}
 .dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+
+
+img {
+	border: none !important;
+}
