@@ -119,22 +119,23 @@
 	<div class="container-fluid content">
 		<div class="row">
 		    <div class="col-xs-2 left-menu">
-				<a href="#"><img src="img/types/type1.png"></a>
-				<a href="#"><img src="img/types/type2.png"></a>
-				<a href="#"><img src="img/types/type3.png"></a>
-				<a href="#"><img src="img/types/type4.png"></a>
-				<a href="#"><img src="img/types/type5.png"></a>
-				<a href="#"><img src="img/types/type6.png"></a>
-				<a href="#"><img src="img/types/type7.png"></a>
-				<a href="#"><img src="img/types/type8.png"></a>
-				<a href="#"><img src="img/types/type9.png"></a>
+		    	<a href="javascript:void(0)" class="cats" id="popular"><img src="img/types/type0.png"></a>
+				<a href="javascript:void(0)" class="cats" id="fresh"><img src="img/types/type1.png"></a>
+				<a href="javascript:void(0)" class="cats" id="meat"><img src="img/types/type2.png"></a>
+				<!-- <a href="#" id="meat"><img src="img/types/type3.png"></a> -->
+				<a href="javascript:void(0)" class="cats" id="bakery"><img src="img/types/type4.png"></a>
+				<!-- <a href="#" id="meat"><img src="img/types/type5.png"></a> -->
+				<a href="javascript:void(0)" class="cats" id="dairy"><img src="img/types/type6.png"></a>
+				<!-- <a href="#" id="meat"><img src="img/types/type7.png"></a> -->
+				<a href="javascript:void(0)" class="cats" id="drinks"><img src="img/types/type8.png"></a>
+<!-- 				<a href="#"><img src="img/types/type9.png"></a>
 				<a href="#"><img src="img/types/type10.png"></a>
 				<a href="#"><img src="img/types/type11.png"></a>
 				<a href="#"><img src="img/types/type12.png"></a>
-				<a href="#"><img src="img/types/type13.png"></a>
+				<a href="#"><img src="img/types/type13.png"></a> -->
 			</div>
 		
-		<div class="col-xs-10">
+		<div class="col-xs-10 products-wrap">
 			<div class="col-md-2 col-sm-4 col-lg-1 product-wrap">
 			    <div class="product" id="11">
 				    <img class="img-responsive" src="img/apple.jpg">
@@ -142,8 +143,8 @@
 
 				    <div class="action">
 						<div>
-							<button href="javascript:;" class="reduce_count btn minus btn-dark-blue btn-small-med btn-trans">-</button>
-							<button href="javascript:;" class="increase_count btn add btn-dark-blue btn-small-med btn-trans">Добавить</button>
+							<button href="javascript:void(0)" class="reduce_count btn minus btn-dark-blue btn-small-med btn-trans">-</button>
+							<button href="javascript:void(0)" class="increase_count btn add btn-dark-blue btn-small-med btn-trans">Добавить</button>
 						</div>
 					</div>
 					
@@ -247,8 +248,50 @@
 				</div>	
 			</div>
 
-	
-			<div id="denchik">asdfa</div>
+			<div class="col-lg-1 col-md-2 col-sm-4 product-wrap">
+			    <div class="product" id="14">
+				    <img style="background: url(http://globe-views.com/dcim/dreams/bananas/bananas-03.jpg); background-position: center center; background-size: 100%; background-repeat: no-repeat;">
+				    <div class="item_count btn count">0</div>
+
+				    <div class="action">
+						<div>
+							<button href="javascript:;" class="reduce_count btn minus btn-dark-blue btn-small-med btn-trans">-</button>
+							<button href="javascript:;" class="increase_count btn add btn-dark-blue btn-small-med btn-trans">Добавить</button>
+						</div>
+					</div>
+					<div class="desc">
+					    <div class="name" id="onet">
+					    	<p class="product-name">Бананчик </p>
+					    </div>
+					    <div class="price">
+					    	<p class="product-price">23.00 руб</p>
+					    </div>	
+				    </div>
+				</div>	
+			</div>
+
+			<div class="col-lg-1 col-md-2 col-sm-4 product-wrap">
+			    <div class="product" id="15">
+				    <img style="background: url(http://globe-views.com/dcim/dreams/bananas/bananas-03.jpg); background-position: center center; background-size: 100%; background-repeat: no-repeat;">
+				    <div class="item_count btn count">0</div>
+
+				    <div class="action">
+						<div>
+							<button href="javascript:;" class="reduce_count btn minus btn-dark-blue btn-small-med btn-trans">-</button>
+							<button href="javascript:;" class="increase_count btn add btn-dark-blue btn-small-med btn-trans">Добавить</button>
+						</div>
+					</div>
+					<div class="desc">
+					    <div class="name" id="onet">
+					    	<p class="product-name">Бананчик не  желтый</p>
+					    </div>
+					    <div class="price">
+					    	<p class="product-price">23.00 руб</p>
+					    </div>	
+				    </div>
+				</div>	
+			</div>
+
 	  	 </div>
 	 </div>	
 	</div>		
@@ -260,53 +303,9 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/expfood.js"></script>
-// <script>
-// 		$(document).ready( function()
-// 		{	
-// 			jQuery('#slideshow0 > div').camera({
-// 			alignment:"center",
-// 			autoAdvance:true,
-// 			mobileAutoAdvance:true,
-// 			barDirection:"leftToRight",
-// 			barPosition:"bottom",
-// 			cols:6,
-// 			easing:"easeInOutExpo",
-// 			mobileEasing:"easeInOutExpo",
-// 			fx:"random",
-// 			mobileFx:"random",
-// 			gridDifference:250,
-// 			height:"auto",
-// 			hover:true,
-// 			loader:"pie",
-// 			loaderColor:"#eeeeee",
-// 			loaderBgColor:"#222222",
-// 			loaderOpacity:0.3,
-// 			loaderPadding:2,
-// 			loaderStroke:7,
-// 			minHeight:"200px",
-// 			navigation:true,
-// 			navigationHover:true,
-// 			mobileNavHover:true,
-// 			opacityOnGrid:false,
-// 			overlayer:true,
-// 			pagination:true,
-// 			pauseOnClick:true,
-// 			playPause:true,
-// 			pieDiameter:38,
-// 			piePosition:"rightTop",
-// 			portrait:false,
-// 			rows:4,
-// 			slicedCols:12,
-// 			slicedRows:8,
-// 			slideOn:"random",
-// 			thumbnails:false,
-// 			time:7000,
-// 			transPeriod:1500,				
-// 			imagePath: '../image/'
-// 		});
-// 	});
-// 	</script>    
+<script type="text/javascript" src="js/cart.js"></script>
+<script type="text/javascript" src="js/categories.js"></script>
 
 
-</body></html>
+</body>
+</html>

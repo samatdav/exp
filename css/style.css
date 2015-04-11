@@ -182,6 +182,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	right: 15px;
 	background: #66cc66;
 	border-radius: 3px;
+	z-index: 10;
 }
 
 .item_count {
@@ -212,6 +213,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	bottom: 18px;
 	right: 95px;
 	background: #66cc66;
+	z-index: 10;
 }
 
 .product .desc .price{
@@ -2533,7 +2535,7 @@ td.image img
 	width:100px;
 }
 td.name {
-	width: 100px;
+	width: 130px;
 }
 .cart-info.dropdown-menu, .cart-info.dropdown-menu .table tbody
 {
