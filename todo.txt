@@ -1,5 +1,3 @@
 pay button instead of iframe
 
-categories work
-
-add button over picture
+add buttons over pictures

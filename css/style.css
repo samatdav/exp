@@ -2528,7 +2528,12 @@ td.image
 {
   text-align: center;
 }
-
+.product-howmuch {
+	position: absolute;
+	left: 18px;
+	bottom: 41px;
+	font-size: 13px;
+}
 td.image img
 {
 	max-width:100px;
