@@ -110,10 +110,10 @@ $(document).on('click', ".reduce_count", function(){
 });
 
 
-$('.dropdown').click(function () {
-	$('.dropdown-menu').css( "display", "block" );
-	$('.dropdown-menu').css( "width", "350px" );
-});
+// $('.dropdown').click(function () {
+// 	$('.dropdown-menu').css( "display", "block" );
+// 	$('.dropdown-menu').css( "width", "350px" );
+// });
 
 
 // $( ".paybtn" ).click(function() {
@@ -127,9 +127,9 @@ $(".paybtn").click(function(){
 $('#yiframe').click(function () {
 	alert('clicked');
 });
-// $('.dropdown').click(function () {
-// 			$( "iframe" ).attr({
-// 	  src: "https://money.yandex.ru/embed/small.xml?account=410013034873931&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=expfood&default-sum="+totalCost+"&successURL=",
-// 	});
-// });
+$('.dropdown').click(function () {
+			$( "iframe" ).attr({
+	  src: "https://money.yandex.ru/embed/small.xml?account=410013034873931&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=expfood&default-sum="+totalCost+"&successURL=",
+	});
+});
 

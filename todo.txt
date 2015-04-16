@@ -1,3 +1,16 @@
+-functionality
+fill order information
+
+item lists
+
+choose location (maybe buttons first - then location)
+
+-apparence
+
+scroll dropdown
+
 pay button instead of iframe
 
 add buttons over pictures
+
+highlight chosen category
