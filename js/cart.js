@@ -108,6 +108,18 @@ $(document).on('click', ".reduce_count", function(){
 
 	return newItem;
 });
+var h;
+var m;
+function updateClock() {
+	var d = new Date();
+	var h = d.getHours() + 1;
+	var m = d.getMinutes();
+	$("#cart_time_b").html(h+':'+ (d.getMinutes()<10?'0':'') + m);
+	$(".order-time").html(h+':'+ (d.getMinutes()<10?'0':'') + m);
+    setTimeout(updateClock, 6000);
+    return [h,m];
+}
+updateClock(); // initial call
 
 
 // $('.dropdown').click(function () {

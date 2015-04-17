@@ -175,7 +175,10 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 {
    background-color:#aaa;
 }
-
+.cart-second-col {
+	position: relative;
+	left: 20px;
+}
 .product .action div .add{
 	position: absolute;
 	bottom: 18px;
@@ -2574,7 +2577,12 @@ td.name {
     background:#fff;
     padding-top:0px;
 }
-
+.order-time {
+	font-size: 20px;
+}
+.order-price {
+	font-size: 20px;
+}
 .cart-info.dropdown-menu  tbody .name a
 {
 	font-size:12px;
@@ -2584,10 +2592,6 @@ td.name {
 	left: -120px;
 }
 
-#cart_time {
-	position: relative;
-	left: 10px;
-}
 
 .cart-total
 {
