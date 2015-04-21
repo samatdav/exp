@@ -1,6 +1,10 @@
 -functionality
 fill order information
-
+	address
+	name
+	number
+	instructions
+	pay
 item lists
 
 choose location (maybe buttons first - then location)
