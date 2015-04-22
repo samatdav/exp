@@ -1,7 +1,54 @@
 .container {
-	padding-top: 210px;
+	padding-top: 10px;
 }
 
 .content {
 	margin-top: 100px;
+}
+
+.navbar {
+	height: 150px;
+}
+
+.logo {
+	padding: 10px;
+	/*position: relative;*/
+	height: 150px;
+/*	margin-top: 30px;
+	left: 500px;*/
+	/*text-align: center;*/
+	/*margin: 0 auto;*/
+}
+
+#map {
+	/*margin-top: 100px;*/
+    width: 100%;
+    /*height: calc(100% - 140px);*/
+    /*height: 100%;*/
+    height: 800px;
+    max-height: 100%;
+	/*z-index: 10000;*/
+}
+
+#logo_icon {
+	position: absolute;
+	left: 10px;
+}
+#logo_text {
+	position: absolute;
+	left: 200px;
+}
+
+.header {
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#target {
+        width: 345px;
+}
+
+
+.content {
+	padding-top: 50px;
 }

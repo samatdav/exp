@@ -1,0 +1,31 @@
+.slimbox {
+	margin: 0 auto;
+	width: 350px;
+	/*margin-top: 50px;*/
+}
+.content h1 {
+	text-align: center;
+	margin: 50px 0;
+	/*font-family: sans-serif;*/
+	color: #777;
+}
+.signin,
+.form-control {
+	height: 50px;
+	border-radius: 10px;
+}
+.signin {
+	font-size: 22px;
+	font-family: sans-serif;
+	margin-bottom: 20px;
+}
+
+p {
+	text-align: center;
+	font-size: 18px;
+	color: #999;
+}
+p a {
+	font-size: 18px;
+	color: #0088cc;
+}

@@ -7,8 +7,6 @@ fill order information
 	pay
 item lists
 
-choose location (maybe buttons first - then location)
-
 -apparence
 
 scroll dropdown

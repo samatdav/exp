@@ -109,21 +109,7 @@ input[type="image"]
 	color: #000;
 }
 
-#map-words {
-	position: absolute;
-	bottom: 100px;
-	left: 450px;
 
-	text-align: center;
-	font-size: 50px;
-	color: #000;
-}
-.continue {
-	width: 350px;
-	height: 50px;
-	background-color: #cc66cc;
-
-}
 ul,ol
 {
     margin:0px; 
@@ -131,7 +117,7 @@ ul,ol
 
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"],input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="tel"], input[type="color"], .uneditable-input
 {
-   padding:5px 5px;
+   padding:14px 15px;
 }
 
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus
@@ -317,9 +303,9 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   opacity: 1;
 }
 
-.content {
+/*.content {
 	padding-top: 100px;
-}
+}*/
 .navbar .navbar-brand span
 {
 	color:#fff;
