@@ -1,8 +1,4 @@
-.slimbox {
-	margin: 0 auto;
-	width: 350px;
-	/*margin-top: 50px;*/
-}
+
 .content h1 {
 	text-align: center;
 	margin: 50px 0;
@@ -14,10 +10,12 @@
 	height: 50px;
 	border-radius: 10px;
 }
-.signin {
+.btn-signin {
 	font-size: 22px;
 	font-family: sans-serif;
 	margin-bottom: 20px;
+	height: 50px;
+	border-radius: 10px;
 }
 
 p {

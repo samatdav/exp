@@ -67,10 +67,10 @@ function codeAddress() {
       console.log(results[0].geometry.location.lat());
       if( results[0].geometry.location.lat() < 55.670552 && results[0].geometry.location.lat() > 55.66246 && results[0].geometry.location.lng() < 37.296839 && results[0].geometry.location.lng() > 37.264609)
             {
-                console.log(true)
+                console.log(results[0].address_components);
                 flag = true;
                 var mwords = document.getElementById("map-words");
-                mwords.innerHTML = "Мы уже работаем для тебя <br> <form action='main.html'> <input class='btn btn-primary continue' type='submit' value='Продолжить'></form>";
+                mwords.innerHTML = '<div class="slimbox"> <h1>Мы работаем для тебя!</h1> <h2>Зарегистрируйся и получи бесплатную доставку на первый заказ!</h2> <form>  <div class="form-group"> <input required type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"> </div> <div class="form-group"> <input required type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль"> </div> <button type="submit" class="btn-signin btn btn-primary btn-block">Зарегистрироваться</button> </form>  <p> Уже есть аккаунт? <a class="signup" href="signin.html">Войти</a> </p> </div> </div><style>#map-canvas { opacity: 0.5; } #map-words {height: 100%;}</style>';
 
             }
             else
@@ -78,7 +78,7 @@ function codeAddress() {
                 console.log(false);
                 flag = false;
                 var mwords = document.getElementById("map-words");
-                mwords.innerHTML = "Уже скоро мы будем тут!";
+                mwords.innerHTML = '<div class="slimbox"> <h1>Мы уже скоро будем тут!</h1> <h2>Оставь свой имейл и мы тебе сразу сообщим об открытии!</h2> <form>  <div class="form-group"> <input required type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"> </div> <button type="submit" class="btn-signin btn btn-primary btn-block">Оставить Email</button> </form>  <p> Уже есть аккаунт? <a class="signup" href="signin.html">Войти</a> </p> </div> </div><style>#map-canvas { opacity: 0.5; } #map-words {height: 100%;}</style>';
             }
     } else {
       alert('Пожалуйста, введите свой адрес сверху страницы и нажмите Enter');

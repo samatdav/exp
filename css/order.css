@@ -52,3 +52,36 @@
 .content {
 	padding-top: 50px;
 }
+
+#toPay {
+	background-color: #66cc66 ;
+	color: white;
+}
+.order-time,
+.order-price {
+	font-size: 20px;
+	position: relative;
+	top: 5px;
+}
+label {
+	font-size: 14px;
+}
+
+#toPay:hover {
+	background-color: #181 ;
+	color: white;
+}
+
+.backForth {
+	padding: 12px 20px !important;
+	font-size: 17px;
+	font-weight: bold;
+}
+#submitToPay {
+	display: none;
+}
+
+.pager .disabled > a {
+	background-color: #9e9 !important;
+	color: #aaa !important;
+}

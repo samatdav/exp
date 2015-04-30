@@ -16,3 +16,5 @@ pay button instead of iframe
 add buttons over pictures
 
 highlight chosen category
+
+browser remember login/password

@@ -13,11 +13,12 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/order.css">
-
 </head>
 
 <body>
 <div class="page-container">
+
+<link rel="stylesheet" type="text/css" href="css/order.css"> 
     <div class="header  navbar-fixed-top">
             <nav class="navbar fluid-container">
               <div class="navbar-header">
@@ -32,53 +33,53 @@
 
         <div class="container">
           <div class="jumbotron content">
-            <form class="form-horizontal">
-              <div class="form-group">
-                <label for="inputEmail3" class="col-sm-2 control-label">Адрес</label>
-                <div class="col-sm-10">
-                  <input type="text" required class="form-control" id="inputEmail3" placeholder="Например Маковского 2">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Ваше Имя</label>
-                <div class="col-sm-10">
-                  <input type="text"  class="form-control" id="inputPassword3" placeholder="Например Маша">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Номер мобильного</label>
-                <div class="col-sm-10">
-                  <input type="text" required class="form-control" id="inputPassword3" placeholder="По нему мы будем звязываться с Вами по всем вопросам заказа">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label" >Дополнительные инструкции</label>
-                <div class="col-sm-10">
-                <textarea class="form-control" rows="3" placeholder="Позвонить когда доставят"></textarea>
-                  <!-- <input type="text" class="form-control" id="inputPassword3" placeholder="Позвонить когда доставят"> -->
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Время доставки</label>
-                <div type="text" class="col-sm-10">
-                  
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-group">
-                  <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-large btn-success">Sign in</button>
-                  </div>
-                </div>
-                <div class="col-sm-offset-2 col-sm-10 sample">
-                  <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=410013034873931&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=white&targets=expfood&default-sum=999&successURL=" width="195" height="54"></iframe>
-                  <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=410013085842859&quickpay=small&any-card-payment-type=on&button-text=01&button-size=l&button-color=black&targets=123&default-sum=155&successURL=" width="241" height="54"></iframe>
-                </div>
-              </div>
-            </form>
+            
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name" id="name">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email" id="email">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Link to your Airbnb listing" id="phone">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Remarks" id="message"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send</button>
+                            </div>
+                        </div>
+                    </form>
           </div>
         </div>
+
+        <div class="container2">
+<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=410013085842859&quickpay=small&any-card-payment-type=on&button-text=01&button-size=l&button-color=black&targets=123&default-sum=155&successURL=" width="241" height="54"></iframe>
+    <div class="overlay"></div>
 </div>
+<style type="text/css">
+.container2{position:relative;float:left;}
+.overlay{top:0;left:0;width:90%;height:100%;position:absolute;}
+</style>
+
+</div>
+<div id="id01"></div>
+
+
+
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
@@ -86,13 +87,31 @@
 <script type="text/javascript" src="js/cart.js"></script>
 <script type="text/javascript" src="js/categories.js"></script>
 <script type="text/javascript" src="js/order.js"></script>
+
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
 <script type="text/javascript">
-$(document).on('click', "iframe", function(){
-  console.log("hi");
+
+$.ajax({
+    url: 'http://expfood-poisk.rhcloud.com/api/v1/category/1/?format=json9',
+    dataType: 'JSONP',
+    jsonpCallback: 'callback',
+    type: 'GET',
+    success: function (data) {
+        console.log(data);
+        $('#id01').html(data.resource_uri);
+    }
 });
+</script>
+    <script type="text/javascript">
+// $(document).on('click', "iframe", function(){
+//   console.log("hi");
+// });
+$('.overlay').click(function(){alert('hello');})
 
 $( "iframe" ).mouseover(function() {
     console.log("hi");
+    $("iframe").click();
   });
 </script>
 </body>

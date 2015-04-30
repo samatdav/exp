@@ -1,3 +1,42 @@
 body {
 	padding-top: 93px;
 }
+
+.tile-1 .product-wrap {
+	width: 100%;
+}
+
+.tile-2 .product-wrap {
+	width: 50%;
+}
+
+.tile-3 .product-wrap {
+	width: 33.33%;
+}
+
+.tile-4 .product-wrap {
+	width: 25%;
+}
+
+.tile-5 .product-wrap {
+	width: 20%;
+}
+
+.tile-6 .product-wrap {
+	width: 16.66%;
+}
+
+.tile-7 .product-wrap {
+	width: 14.28%;
+}
+
+.tile-8 .product-wrap {
+	width: 12.5%;
+}
+.product-wrap {
+	float: left;
+}
+.product {
+	
+	position: relative;
+}
